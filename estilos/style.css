@@ -8,14 +8,15 @@ body {
 
 header {
     background-color: #f4f4f4;
-    padding: 25px 30px;
+    padding: 25px 30px 0px 30px;
     border-bottom: 2px solid #dcdcdc;
 }
 
 nav {
     width: 100%;
     text-align: right;
-    line-height: 60px; 
+    line-height: 60px;
+    height: 60px;
 }
 
 .logo,
@@ -57,13 +58,14 @@ nav {
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
-    padding: 6px 10px;
+    padding: 8px 16px;
     transition: 0.3s;
 }
 
 .menu a:hover {
     background-color: #0b6b2d62;
     color: white;
+    border-radius: 8px;
 }
 
 /* ÍCONES */
@@ -73,8 +75,7 @@ nav {
     margin-left: 15px;
 }
 
-.icones a,
-.icones details {
+.icones a {
     display: inline-block;
     vertical-align: middle;
     margin-right: 12px;
@@ -94,70 +95,28 @@ nav {
     margin-right: 0;
 }
 
-details {
-    display: inline-block;
-    position: relative;
-    vertical-align: middle;
-}
-
-summary {
-    display: inline-block;
-    list-style: none;
-    cursor: pointer;
-}
-
-.icones a,
-summary {
-    width: 40px;
-    height: 40px;
+.icones a {
+    width: 44px;
+    height: 44px;
     padding: 0;
     border-radius: 50%;
     text-align: center;
-    line-height: 40px;
+    line-height: 44px;
     transition: 0.2s;
 }
 
-.icones a:hover,
-summary:hover {
+.icones a:hover {
     background-color: #0b6b2d62;
 }
 
-.icones a:hover .material-symbols-outlined,
-summary:hover .material-symbols-outlined {
+.icones a:hover .material-symbols-outlined {
     color: white;
-}
-
-summary::-webkit-details-marker {
-    display: none;
 }
 
 .material-symbols-outlined {
     font-size: 28px;
-    line-height: 40px;
+    line-height: 44px;
     vertical-align: middle;
-}
-
-.idiomas {
-    position: absolute;
-    top: 35px;
-    left: 0;
-    list-style: none;
-    margin: 0;
-    padding: 8px 12px;
-    background-color: white;
-    border: 1px solid #ccc;
-    z-index: 10;
-}
-
-.idiomas li {
-    display: block;
-    margin: 8px 0;
-}
-
-.idiomas a {
-    color: black;
-    text-decoration: none;
-    font-size: 14px;
 }
 
 header::after {
@@ -192,7 +151,7 @@ main > p::after {
     width: 60%;
     height: 2px;
     background-color: #dcdcdc;
-    margin: 40px auto 25px auto; /* 🔥 antes | lados | depois */
+    margin: 40px auto 25px auto;
 }
 
 main a {
@@ -211,6 +170,8 @@ main a {
     padding: 80px 40px;
     color: white;
     text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 #localizacao::before {
@@ -319,7 +280,7 @@ main a {
 }
 
 .container-cursos {
-    width: 90%;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -379,10 +340,10 @@ main a {
 #servicos::before {
     content: "";
     display: block;
-    width: 60%;              /* tamanho da linha */
+    width: 60%;
     height: 2px;
     background-color: #dcdcdc;
-    margin: 0 auto 30px auto; /* centraliza */
+    margin: 0 auto 30px auto;
 }
 
 .subtitulo-servicos {
@@ -392,7 +353,7 @@ main a {
 }
 
 .container-servicos {
-    width: 90%;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -431,19 +392,11 @@ main a {
     font-weight: bold;
 }
 
-footer {
-    background-color: #0b6b2d;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    font-size: 0.9em;
-}
-
 #formulario {
     width: 90%;
     margin-top: 20px;
     margin: 0 auto;
-    padding: 20px 0 40px 0;
+    padding: 0px 0 40px 0;
 }
 
 #formulario fieldset {
@@ -456,7 +409,7 @@ footer {
 #formulario legend {
     color: #0b6b2d;
     font-weight: bold;
-    font-size: 1.1em; /* 🔥 aumenta */
+    font-size: 1.1em;
     padding: 0 10px;
 }
 
@@ -512,7 +465,7 @@ footer {
 
 .area-botao input[type="submit"] {
     font-size: 1.1em;
-    width: auto; /* 🔥 agora funciona */
+    width: auto;
     padding: 10px 20px;
     border-radius: 25px;
     background-color: #0b6b2d;
@@ -525,4 +478,12 @@ footer {
 
 .area-botao input[type="submit"]:hover {
     background-color: #084d21;
+}
+
+footer {
+    background-color: #0b6b2d;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    font-size: 0.9em;
 }
